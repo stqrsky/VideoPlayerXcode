@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     
-    let data = ["Wellen2", "Eichhoernchen", "WellenMusik"]
+    let data = ["", "Wellen2", "Eichhoernchen", "WellenMusik"]
     
     var selectedMovieTitle: String?
     
@@ -25,6 +25,9 @@ class ViewController: UIViewController {
         pickerView.dataSource = self
         
         textField.inputView = pickerView
+        textField.tintColor = .clear
+        
+        pickerView.backgroundColor = .systemBackground
         
         playButton.layer.cornerRadius = 20
     }
@@ -46,6 +49,11 @@ class ViewController: UIViewController {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
 }
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -63,6 +71,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedMovieTitle = data[row]
+        textField.text = data[row]
     }
     
 }
