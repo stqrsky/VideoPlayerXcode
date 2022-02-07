@@ -23,7 +23,15 @@ class ViewController: UIViewController {
     @IBAction func playButtonTapped(_ sender: UIButton) {
         
         let url = Bundle.main.url(forResource: data, withExtension: "mp4")
+        guard let videoURL = url else { return }
         
+        let player = AVPlayer(url: videoURL)
+        let vc = AVPlayerViewController()
+        
+        vc.player = player
+        present(vc, animated: true) {
+            vc.player?.play()
+        }
     }
     
 }
