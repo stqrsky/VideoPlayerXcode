@@ -13,6 +13,9 @@
 		F80F95C527B0F3E60063A279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80F95C327B0F3E60063A279 /* Main.storyboard */; };
 		F80F95C727B0F3E80063A279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80F95C627B0F3E80063A279 /* Assets.xcassets */; };
 		F80F95CA27B0F3E80063A279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80F95C827B0F3E80063A279 /* LaunchScreen.storyboard */; };
+		F80F95D427B1176B0063A279 /* Eichhoernchen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F80F95D127B117680063A279 /* Eichhoernchen.mp4 */; };
+		F80F95D527B1176B0063A279 /* Wellen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F80F95D227B117690063A279 /* Wellen2.mp4 */; };
+		F80F95D627B1176B0063A279 /* WellenMusik.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F80F95D327B1176B0063A279 /* WellenMusik.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F80F95C627B0F3E80063A279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80F95C927B0F3E80063A279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80F95CB27B0F3E80063A279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80F95D127B117680063A279 /* Eichhoernchen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eichhoernchen.mp4; sourceTree = "<group>"; };
+		F80F95D227B117690063A279 /* Wellen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wellen2.mp4; sourceTree = "<group>"; };
+		F80F95D327B1176B0063A279 /* WellenMusik.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WellenMusik.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +69,19 @@
 				F80F95C627B0F3E80063A279 /* Assets.xcassets */,
 				F80F95C827B0F3E80063A279 /* LaunchScreen.storyboard */,
 				F80F95CB27B0F3E80063A279 /* Info.plist */,
+				F80F95D727B117720063A279 /* videos */,
 			);
 			path = VideoPlayerXcode;
+			sourceTree = "<group>";
+		};
+		F80F95D727B117720063A279 /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				F80F95D127B117680063A279 /* Eichhoernchen.mp4 */,
+				F80F95D227B117690063A279 /* Wellen2.mp4 */,
+				F80F95D327B1176B0063A279 /* WellenMusik.mp4 */,
+			);
+			path = videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +144,10 @@
 			files = (
 				F80F95CA27B0F3E80063A279 /* LaunchScreen.storyboard in Resources */,
 				F80F95C727B0F3E80063A279 /* Assets.xcassets in Resources */,
+				F80F95D627B1176B0063A279 /* WellenMusik.mp4 in Resources */,
 				F80F95C527B0F3E60063A279 /* Main.storyboard in Resources */,
+				F80F95D427B1176B0063A279 /* Eichhoernchen.mp4 in Resources */,
+				F80F95D527B1176B0063A279 /* Wellen2.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

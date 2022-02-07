@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import AVKit
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var playButton: UIButton!
+    
+    let data = "Wellen2"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,9 @@ class ViewController: UIViewController {
 
     
     @IBAction func playButtonTapped(_ sender: UIButton) {
+        
+        let url = Bundle.main.url(forResource: data, withExtension: "mp4")
+        
     }
     
 }
